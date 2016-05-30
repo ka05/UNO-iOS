@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zSV-cD-xNT" customClass="OnlineUserTableCell" customModule="uno" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zSV-cD-xNT" id="LOD-Gq-Jx4">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKU-63-ouf">
+                        <rect key="frame" x="41" y="11" width="263" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSA-wE-Xgy" customClass="CircleView" customModule="uno" customModuleProvider="target">
+                        <rect key="frame" x="8" y="10" width="25" height="25"/>
+                        <color key="backgroundColor" red="1" green="0.75614611300000001" blue="0.34309438590000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="c7t-YE-u4k"/>
+                            <constraint firstAttribute="width" constant="25" id="u50-1S-0MT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lSA-wE-Xgy" firstAttribute="top" secondItem="LOD-Gq-Jx4" secondAttribute="topMargin" constant="2" id="9f8-na-5L9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VKU-63-ouf" secondAttribute="bottom" constant="4" id="HlC-Aa-RrD"/>
+                    <constraint firstItem="VKU-63-ouf" firstAttribute="top" secondItem="LOD-Gq-Jx4" secondAttribute="topMargin" constant="3" id="hQV-KP-QTs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VKU-63-ouf" secondAttribute="trailing" constant="8" id="kNL-HL-bEP"/>
+                    <constraint firstItem="VKU-63-ouf" firstAttribute="leading" secondItem="lSA-wE-Xgy" secondAttribute="trailing" constant="8" id="v6f-7q-0ik"/>
+                    <constraint firstItem="lSA-wE-Xgy" firstAttribute="leading" secondItem="LOD-Gq-Jx4" secondAttribute="leadingMargin" id="yFG-a0-dQb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inGameIndicator" destination="lSA-wE-Xgy" id="aGI-JC-cJZ"/>
+                <outlet property="username" destination="VKU-63-ouf" id="YNY-uz-Ixq"/>
+            </connections>
+            <point key="canvasLocation" x="539" y="318"/>
+        </tableViewCell>
+    </objects>
+</document>
